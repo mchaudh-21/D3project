@@ -81,7 +81,7 @@
             .y(d => (groupByOrg ? yScale(d.Org) : innerHeight/2))    // does group/split based on if we want groupByContinent
             .strength(0.2)
           )
-        .force(
+        .force( 
           "collide", 
           forceCollide().radius((d) => radiusScale(d.TotalCost)))
 
